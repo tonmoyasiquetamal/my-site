@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook-Purchase</title>
+    <!-- Tailwind Min-CSS Style Sheet File here -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awsome CDN File Here -->
+    <script src="https://kit.fontawesome.com/94a81e8d53.js" crossorigin="anonymous"></script>
+    <!-- Fav-Icon Images Here  -->
+    <link rel="shortcut icon" href="images/fav-icon.jpg" type="image/x-icon">
+</head>
+<!-- The Body Start -->
+
+<body>
+    <!-- Section are starting here -->
+    <section class="text-gray-700 body-font overflow-hidden bg-white">
+        <div class="container px-5 py-10 mx-auto">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                <img class="lg:w-1/2 w-full h-full object-top" src="images/mac.png" alt="macbook">
+                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <!-- Title for Mac-Book -->
+                    <h3 class="text-gray-700 text-4xl font-medium mb-3">Customize your Blue 24-inch iMac with Apple M1
+                        chip.</h3>
+
+                    <!-- Description for Mac-Book -->
+                    <span class="text-gray-500">M1 features our latest Neural Engine. Its 16‑core design is capable of
+                        executing a massive 11 trillion operations per second. In fact, with a powerful 8‑core GPU,
+                        machine learning accelerators, and the Neural Engine, the entire M1 chip is designed to excel at
+                        machine learning.</span>
+
+                    <!-- Memory Selective Area  -->
+                    <h6 class="text-gray-600 text-2xl font-medium mt-10">Memory</h6>
+                    <button id="ram-8gb"
+                        class="my-2 px-8 py-2 bg-white text-gray-600 border border-gray-600 text-sm font-medium rounded">8GB
+                        unified memory</button>
+                    <button id="ram-16gb"
+                        class="my-2 px-8 py-2 bg-white text-gray-600 border border-gray-600 text-sm font-medium rounded">16GB
+                        unified memory
+                    </button>
+
+                    <!-- Storage Selective Area -->
+                    <h6 class="text-gray-600 text-2xl font-medium mt-10">Storage</h6>
+                    <button id="storage-256gb"
+                        class="my-2 px-8 py-2 bg-white text-gray-600 border border-gray-600 text-sm font-medium rounded">256GB
+                        SSD storage</button>
+                    <button id="storage-512gb"
+                        class="my-2 px-8 py-2 bg-white text-gray-600 border border-gray-600 text-sm font-medium rounded">512GB
+                        SSD storage
+                    </button>
+                    <button id="storage-1tb"
+                        class="my-2 px-8 py-2 bg-white text-gray-600 border border-gray-600 text-sm font-medium rounded">1TB
+                        SSD storage
+                    </button>
+
+                    <!-- Delivery Area -->
+                    <h6 class="text-gray-600 text-2xl font-medium mt-10">Choose your delivery option</h6>
+                    <button id="free-delivery"
+                        class="my-2 px-8 py-2 bg-white text-gray-600 border border-gray-600 text-sm font-medium rounded">Friday,
+                        Aug 25 FREE Prime Delivery
+                    </button>
+                    <button id="charge-delivery"
+                        class="my-2 px-8 py-2 bg-white text-gray-600 border border-gray-600 text-sm font-medium rounded">Friday,
+                        Aug 21 Delivery Charge $20
+                    </button>
+
+                    <!-- Pricing Table Area Start -->
+                    <div class="p-4 ">
+                        <div class="flex justify-between border-b">
+                            <div class="lg:px-4 m-2 text-lg lg:text-xl font-medium text-center text-gray-600">
+                                Best Price
+                            </div>
+                            <div class="lg:px-4 m-2 lg:text-lg font-medium text-left text-gray-600">
+                                $ <span id="best-price">1299</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between pt-1 border-b">
+                            <div class="lg:px-4 m-2 text-lg lg:text-xl font-medium text-center text-gray-600">
+                                Extra Memory Cost
+                            </div>
+                            <div class="lg:px-4 m-2 lg:text-lg font-medium text-center text-gray-600">
+                                $ <span id="ram-cost">0</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between pt-1 border-b">
+                            <div class="lg:px-4 m-2 text-lg lg:text-xl font-medium text-center text-gray-600">
+                                Extra Storage Cost
+                            </div>
+                            <div class="lg:px-4 m-2 lg:text-lg font-medium text-center text-gray-900">
+                                $ <span id="rom-cost">0</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between pt-1 border-b-2 border-gray-600">
+                            <div class="lg:px-4 m-2 text-lg lg:text-xl font-medium text-center text-gray-600">
+                                Delivery charge
+                            </div>
+                            <div class="lg:px-4 m-2 lg:text-lg font-medium text-center text-gray-600">
+                                $ <span id="delivery-cost">0</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between pt-1 border-b">
+                            <div class="lg:px-4 m-2 text-lg lg:text-xl font-medium text-center text-gray-600">
+                                Total Price
+                            </div>
+                            <div class="lg:px-4 m-2 lg:text-lg font-medium text-center text-gray-600">
+                                $ <span id="total-price">1299</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promo Code Area -->
+                    <div class="p-4">
+                        <p class="mb-4 italic">If you have a coupon code, please enter it in the box below</p>
+                        <div class="justify-center md:flex">
+                            <div id="area" class="flex items-center w-full h-13 pl-3 bg-white bg-gray-100 border rounded-full">
+                                <!-- Promo Code Input Field with Applicable -->
+                                <input type="coupon" name="code" id="promo-input" placeholder="Apply coupon"
+                                    class="w-full bg-gray-100 outline-none appearance-none focus:outline-none active:outline-none">
+
+                                <!-- Promo-Code Button with Applicable -->
+                                <button id="promo-code" type="submit"
+                                    class="text-sm flex items-center px-3 py-1 my-0.5 mx-0.5 text-white bg-pink-600 rounded-full outline-none md:px-4  focus:outline-none active:outline-none"><i
+                                        class="fas fa-gifts m-1"></i>
+                                    <span class="font-semibold">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- Annual Price Area -->
+                <div class="flex justify-center pt-1">
+                    <div class="lg:px-4 mt-2 text-lg lg:text-xl text-center text-black font-bold">
+                        Total Price
+                    </div>
+                    <div class="lg:px-4 mt-2 lg:text-lg text-center text-black font-bold">
+                        $ <span id="discount-offer">1299</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section are closing here -->
+
+    <!-- Java Script File here  -->
+    <script src="js/script.js"></script>
+
+</body>
+<!-- The Body End -->
+
+</html>
